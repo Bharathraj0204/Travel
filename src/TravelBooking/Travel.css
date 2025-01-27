@@ -1,0 +1,310 @@
+.navbar-boot{
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(192,192,192);
+    /* position: relative; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover{
+    color: red;
+}
+.home-page{
+    width: 100%;
+    height: auto;
+}
+.home-main{
+    width: 90%;
+    height: auto;
+}
+.kodai-img{
+    background-image: url(./Travelimages/1660899518_kodai-lake-1.jpg);
+    background-size: cover;
+    width: 6%;
+    height: 350px;
+    margin-left: 10%;
+    border-radius: 15px;
+}
+
+.card1{
+    width: 75%;
+    height: 500px;
+    display:inline-block;
+    gap: 5px;
+}
+.card1 img{
+    width: 10%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition:all  ease-out 0.5s;
+    cursor: pointer;
+}
+.card1 img:hover{
+    width: 50%;
+}
+.card-page{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    background-image: url('https://i2.wp.com/www.cleantechloops.com/wp-content/uploads/2019/10/top-travel-agencies-to-work-for.jpg?ssl=1 ');
+    opacity: 0.6;
+    background-color:aliceblue;
+    background-size: cover;
+    height: 400px;
+    
+}
+.about>h1{
+    text-align: center;
+    opacity:15;
+}
+.contain{
+     font-size:x-large;
+    font-style:normal;
+    color:black;
+    font-family:sans-serif;
+    position: relative;
+}
+.contain,p{
+    text-align: center;
+}
+.bg{
+    background-image: url('https://miro.medium.com/max/1104/1*3qVPCkqMC2OZT5CHsHVIMQ@2x.jpeg');
+    background-size: cover;
+    opacity: 0.4;
+    height: 400px;
+    width: 1520px;
+    max-width: 100%;
+    
+    position: absolute;
+}
+.review{
+    text-align: center;
+
+}
+.card{
+    height: 300px;
+    width: 300px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.signup-page{
+    width: 100vw;
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-signup{
+    width: 20vw;
+    height: 300px;
+    background-color: #72bcd4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 28px;
+}
+.btn{
+    border: 2px solid green;
+    background: yellow;
+}
+.hotel-page{
+    width: 100vw;
+    height: auto;
+    background-color:yellow;
+}
+.container-hotel{
+    width: 90vw;
+    height: auto;
+    margin-left: 75px;
+}
+.card-title{
+    font-size: x-large;
+    text-align: center;
+    font-weight: 900;
+    font-family: cursive;
+    color: blue;
+}
+.btn-hotel{
+    border: 2px solid black;
+    
+}
+.cancel-hotel{
+    border: 0px;
+    color: red;
+    
+}
+.star{
+    width: 10vw;
+    height: 13vh;
+}
+#box{
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 9em;
+    box-shadow: 5px 5px 50px 50px rgba(252,5,5,0,699);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+#text{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0399fd;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+#text{
+    width: 200px;
+    border-color: #04fb6b;
+}
+#btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 100%;
+    border: 3px solid #04fb6b;
+    padding: 14px 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+#btn:hover{
+    background: #04fb6b;
+}
+.kodai-page{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+}
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.card::after{
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4 ease-in-out;
+}
+.card:hover img{
+    filter: grayscale(1) brightness(0.6);
+}
+.card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+.card:hover .content h2{
+    scale: 1;
+    opacity: 1;
+}
+.card:hover .content p{
+    opacity: 1;
+    transform: translateY(0);
+}
+.trip-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.package-btn{
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+.package-btn:hover{
+    background: #04fb6b;
+}
+.package-btn{
+    border: 0;
+    background: #0399fd;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 100%;
+    border: 3px solid #04fb6b;
+    padding: 14px 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.search-bar{
+    width: 100vw;
+    height: 100px;
+    background-color: #0399fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose{
+    padding: 10px 10px;
+    font-family: cursive;
+    border: 0;
+}
+.choose:hover{
+    background-color: #04fb6b;
+    color: white;
+}
+.choose-btn{
+    padding: 10px 10px;
+    font-family: cursive;
+    border: 1px solid black;
+}
+.start-date{
+    padding: 10px 10px;
+    font-family: cursive;
+}
+
+
+
